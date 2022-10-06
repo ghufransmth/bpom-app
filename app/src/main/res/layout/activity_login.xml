@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/logo_bpom1"
+        android:layout_gravity=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:textSize="12sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/ic_visibility_off"
+        android:longClickable="false"
+        android:inputType="textPassword"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"/>
+
+    <ImageView
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_btnlogin"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun?"/>
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:text="@string/sign_up"/>
+    </LinearLayout>
+</LinearLayout>
