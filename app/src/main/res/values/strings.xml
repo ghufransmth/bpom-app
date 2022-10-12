@@ -11,4 +11,9 @@
     <string name="num">6</string>
     <string name="verified_scan">Verified Scan</string>
     <string name="report">Report</string>
+
+    <string-array name="item_product">
+        <item>Nelcon</item>
+        <item>Promag</item>
+    </string-array>
 </resources>

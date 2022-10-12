@@ -11,5 +11,7 @@
     <color name="navy">#0C0C8D</color>
     <color name="error">#EB5757</color>
     <color name="success">#6FCF97</color>
+    <color name="Gray1">#F5F5F5</color>
     <color name="Gray3">#828282</color>
+    <color name="greeb">#1D9B4C</color>
 </resources>

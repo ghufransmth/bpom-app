@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.budiyev.android.codescanner.CodeScanner;
@@ -39,7 +40,6 @@ public class ScanQRActivity extends AppCompatActivity implements View.OnClickLis
     ImageView profile_btn_back;
 
     private CodeScanner mCodeScanner;
-    String getPickupDetailId="", getRackCode="";
     int count = 0;
 
     @Override
@@ -121,7 +121,7 @@ public class ScanQRActivity extends AppCompatActivity implements View.OnClickLis
     protected void onResume() {
         super.onResume();
         Dexter.withActivity(ScanQRActivity.this)
-                .withPermissions(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                .withPermissions(Manifest.permission.CAMERA)
                 .withListener(new MultiplePermissionsListener() {
                     @Override
                     public void onPermissionsChecked(MultiplePermissionsReport report) {

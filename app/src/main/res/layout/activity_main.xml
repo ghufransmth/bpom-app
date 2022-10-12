@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Gray1"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -22,7 +23,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
+            android:id="@+id/layout_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -30,7 +31,7 @@
             app:layout_constraintTop_toBottomOf="@+id/img">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/tv_scan_history"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -40,20 +41,22 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tv_scan_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/total_scan_count"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:textColor="@color/Gray3" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/tv_num"
                 android:layout_width="20dp"
                 android:layout_height="wrap_content"
                 android:text="@string/num"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -61,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/layout_text">
 
             <LinearLayout
                 android:id="@+id/verified"
@@ -74,8 +77,8 @@
                 android:background="@drawable/background_button_verified"
                 android:gravity="center"
                 android:padding="8dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
                 android:visibility="visible">
 
                 <TextView
@@ -98,8 +101,8 @@
                 android:background="@drawable/background_button_unverified"
                 android:gravity="center"
                 android:padding="8dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
                 android:visibility="gone">
 
                 <TextView
@@ -120,8 +123,9 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/background_button_verified"
                 android:gravity="center"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
+                android:padding="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
                 android:visibility="gone">
 
                 <TextView
@@ -142,8 +146,9 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/background_button_unverified"
                 android:gravity="center"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
+                android:padding="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
                 android:visibility="visible">
 
                 <TextView
@@ -155,6 +160,20 @@
                     android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_button"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_scan_history" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

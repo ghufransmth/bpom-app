@@ -46,5 +46,6 @@ dependencies {
     // @G - Lottie Animation
     implementation 'com.airbnb.android:lottie:3.4.0'
 
+    // @G - Permission
     implementation 'com.karumi:dexter:6.2.3'
 }
