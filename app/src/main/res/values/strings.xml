@@ -4,4 +4,11 @@
     <string name="sign_up"><u>Sign Up</u></string>
     <string name="deskripsi_nellco">Obat untuk mengatasi gejala flu seperti pilek, hidung tersumbat, bersin-bersin yang disertai oleh batuk.\n\nSetiap 5 ml OBH Nellco mengandung :\n\nGlycyrrhizae succus merupakan salah satu komponen obat batuk hitam (OBH) yang diperoleh dari sari akar tanaman Glycyrrhiza glabra varietas glandulifera dan memberikan efek ekspektoran.\nAmonium Klorida bersifat sebagai agen ekspektoran dalam obat batuk. Efek ekspektoran akan bekerja dengan cara mengiritasi mukosa bronkial yang mempermudah pengeluaran dahak.</string>
     <string name="data_notFound">Data produk tidak ditemukan, silahkan hubungi pihak penjual</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="ok">Ok</string>
+    <string name="scan_history">Scan History</string>
+    <string name="total_scan_count">Total Scan Count</string>
+    <string name="num">6</string>
+    <string name="verified_scan">Verified Scan</string>
+    <string name="report">Report</string>
 </resources>
